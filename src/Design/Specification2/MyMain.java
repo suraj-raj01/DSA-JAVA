@@ -59,3 +59,27 @@ public class MyMain {
         }
     }
 }
+
+/*
+============OUTPUT=============
+
+Enter flat number: 240
+Enter the buildingName: SURAJ'S-HOUSE
+Enter the locality: PARSAUNI
+Enter the city: BAIRGANIA
+Enter the district: SITAMARHI
+Enter the state: BIHAR
+Enter the country: INDIA
+Enter the pinCode: 843313
+Full address : 240, SURAJ'S-HOUSE, PARSAUNI, BAIRGANIA, district - SITAMARHI, BIHAR, INDIA, Pincode - 843313
+Valid Address
+Enter the name: SURAJ KUMAR
+Enter the email: SURAJK38656@GMAIL.COM
+Enter the panCardNumber: KUAPK6226G
+Enter the mobile: 6206546029
+Enter the permanent Address: PARSAUNI,BAIRGANIA,SITAMARHI (BIHAR)
+Enter the present Address: BHARTI NIKETAN BHOPAL (MP)
+Enter the communication Address: PUNE (DELHI)
+Employee Details: SURAJ KUMAR, SURAJK38656@GMAIL.COM, KUAPK6226G, 6206546029, PARSAUNI,BAIRGANIA,SITAMARHI (BIHAR), BHARTI NIKETAN BHOPAL (MP), PUNE (DELHI)
+Valid PAN number
+*/
