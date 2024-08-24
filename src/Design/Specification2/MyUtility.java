@@ -6,7 +6,7 @@ public class MyUtility {
         boolean response = false;
         int pinCode = address.getPincode();
         int flatNumber = address.getFlatNumber();
-        if(flatNumber>1)
+        if(flatNumber>=1)
         {
         if(pinCode<=999999 && pinCode>100000){
             response = true;
@@ -21,7 +21,7 @@ public class MyUtility {
         String name = employee.getName();
         String[] name1 = name.split(" ");
         char[] ch = pan.toCharArray();
-        if(ch[3] == 'P' || ch[3] == 'p' && ch[4]==(name1[1].charAt(0)))
+        if((ch[3] == 'P' || ch[3] == 'p') && (ch[4]==(name1[1].charAt(0))))
         {
             response = true;
         }

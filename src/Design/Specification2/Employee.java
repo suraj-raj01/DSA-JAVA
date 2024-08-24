@@ -5,11 +5,15 @@ public class Employee {
     private String email;
     private String panCardNumber;
     private String mobile;
-    private String permanentAddress;
-    private String presentAddress;
-    private String communicationAddress;
+    private Address permanentAddress;
+    private Address presentAddress;
+    private Address communicationAddress;
 
-    public Employee(String name, String email, String panCardNumber, String mobile, String permanentAddress, String presentAddress, String communicationAddress) {
+    private Employee(){
+
+    }
+
+    public Employee(String name, String email, String panCardNumber, String mobile, Address permanentAddress, Address presentAddress, Address communicationAddress) {
         this.name = name;
         this.email = email;
         this.panCardNumber = panCardNumber;
@@ -51,32 +55,33 @@ public class Employee {
         this.mobile = mobile;
     }
 
-    public String getPermanentAddress() {
+    public Address getPermanentAddress() {
         return permanentAddress;
     }
 
-    public void setPermanentAddress(String permanentAddress) {
+    public void setPermanentAddress(Address permanentAddress) {
         this.permanentAddress = permanentAddress;
     }
 
-    public String getPresentAddress() {
+    public Address getPresentAddress() {
         return presentAddress;
     }
 
-    public void setPresentAddress(String localAddress) {
+    public void setPresentAddress(Address presentAddress) {
         this.presentAddress = presentAddress;
     }
 
-    public String getCommunicationAddress() {
+    public Address getCommunicationAddress() {
         return communicationAddress;
     }
 
-    public void setCommunicationAddress(String communicationAddress) {
+    public void setCommunicationAddress(Address communicationAddress) {
         this.communicationAddress = communicationAddress;
     }
-    public String EmplyeeDetails()
+
+    public String EmployeeDetails()
     {
-        String response = null;
+        String response;
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(name);
         stringBuilder.append(", ");
