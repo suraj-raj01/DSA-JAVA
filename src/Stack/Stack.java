@@ -19,7 +19,7 @@ public class Stack {
 
     public void push(int data)
     {
-        if(top==arr.length-1)
+        if(isFull())
         {
             System.out.println("Stack Overflow!!");
         }
@@ -32,7 +32,7 @@ public class Stack {
     public int pop()
     {
         int t = -1;
-        if(top==-1)
+        if(isEmpty())
         {
             System.out.println("Empty Stack!!");
         }else{
@@ -45,7 +45,7 @@ public class Stack {
     public int peek()
     {
         int t = -1;
-        if(top==-1)
+        if(isEmpty())
         {
             System.out.println("Stack is Empty!!");
         }

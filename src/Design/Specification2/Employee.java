@@ -23,6 +23,9 @@ public class Employee {
         this.communicationAddress = communicationAddress;
     }
 
+    public Employee(String name, String email, String panCardNumber, String mobile, String permanetAdd, String presentAdd, String communicationAdd) {
+    }
+
     public String getName() {
         return name;
     }
